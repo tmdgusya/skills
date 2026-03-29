@@ -111,8 +111,9 @@ terminal(command="kimi --thinking --print -p 'Analyze the architecture tradeoffs
 ## PR Reviews
 
 ```
-# Clone to temp dir and review
-terminal(command="REVIEW=$(mktemp -d) && git clone https://github.com/user/repo.git $REVIEW && cd $REVIEW && gh pr checkout 42 && kimi --print -p 'Review this PR against main. Check for bugs, security issues, and code style.'")
+# In the PR branch, review against main
+terminal(command="gh pr checkout 42", workdir="~/project")
+terminal(command="kimi --print -p 'Review this PR against main. Check for bugs, security issues, and code style.'", workdir="~/project")
 ```
 
 Or with git worktrees:
