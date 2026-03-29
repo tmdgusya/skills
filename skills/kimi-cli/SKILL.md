@@ -16,8 +16,8 @@ Delegate coding tasks to [Kimi Code CLI](https://github.com/MoonshotAI/kimi-cli)
 
 ## Prerequisites
 
-- Kimi CLI installed: `curl -LsSf https://code.kimi.com/install.sh | bash` (installs via uv)
-  - Or manually: `uv tool install --python 3.13 kimi-cli`
+- Kimi CLI installed via [uv](https://docs.astral.sh/uv/): `uv tool install --python 3.13 kimi-cli`
+  - See [official install guide](https://moonshotai.github.io/kimi-cli/en/guides/getting-started.html) for alternatives
 - Authenticated: run `kimi` once, then enter `/login` to configure platform and API key
 - Verify: `kimi --version`
 
